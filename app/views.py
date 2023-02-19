@@ -23,7 +23,7 @@ def contact():
 
             msg = Message(subject,
                 sender=(name,email),
-                recipients=["dennismorrison2733@gmail.com"])
+                recipients=["dtech@gmail.com"])
             msg.body = message
             mail.send(msg)
             
