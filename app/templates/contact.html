@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+
+
+{% block main %}
+
+    <div class = 'top'>
+        <h2> Contact Form</h2>
+        <hr>
+    </div>
+    <div class = 'form'>
+        <p> Fill in the form to contact the site owners.</p>
+        <form action="{{ url_for('contact') }}" method="post" novalidate> 
+            {{ form.csrf_token }}
+            <div class = 'form-details'>
+                {{ form.name.label(class="form-label") }} {{ form.name(class ="form-control") }}
+            </div>
+            <div class = 'form-details'>
+                {{ form.subject.label(class="form-label") }} {{ form.subject(class ="form-control") }}
+            </div>
+            <div class = 'form-details'>
+                {{ form.email.label(class="form-label") }} {{ form.email(class ="form-control", placeholder = "some1@example.com" ) }}
+            </div>
+            <div class = 'form-details' id = 'textboxid'> 
+                {{ form.message.label(class="form-label") }} {{ form.message(class ="form-control", rows= "3") }}
+            </div>
+            <button type="submit" class = "btn-class">Send</button>
+
+        </form>
+    </div>
+
+{% endblock %}

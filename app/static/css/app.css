@@ -1,3 +1,31 @@
 body {
     padding-top: 5rem;
 }
+
+.form{
+    color: rgb(123, 200, 217);
+}
+
+.btn-class
+{
+    width: 10rem;
+    height: 2rem;
+    background-color: #213aad;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 0px;
+    letter-spacing: 1px;
+}
+.form-details{
+    padding-bottom: 2rem;
+}
+
+#textboxid{
+    height: 200px;
+}
+
+hr{
+    color: grey;
+    height: 5px;
+    
+}
